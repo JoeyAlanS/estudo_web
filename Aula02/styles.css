@@ -1,0 +1,116 @@
+
+        * {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-areas: "header","main","footer";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+           text-decoration: none;
+           color: rgb(0, 0, 0);
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+          }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #da549e;
+        }
+
+        h2, h3 {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            color: #a0c6ec;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #222;
+        }
+        section p{
+            color: #eaebec;
+            top: 2px;
+        }
+
+        section img {
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        footer {
+            grid-area:footer;
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            border-radius: 8px;
+        }
+
+        footer h3 {
+            font-size: 1.6rem;
+        }
+
+        footer nav ul {
+            margin-top: 10px;
+        }
+
+        .div-sobre{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: unset;
+            justify-content: space-evenly;
+            margin-top: 2px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .div-sobre p{
+            top: 2px;
+        }
