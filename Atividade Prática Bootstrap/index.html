@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de Compromissos</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Minha Agenda</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agenda">Agenda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Organize seus compromissos com facilidade</h1>
+  </section>
+
+  <div class="container mt-5" id="agenda">
+    <h2>Agendar Compromisso</h2>
+    <div id="alertPlaceholder"></div>
+    <form id="formCompromisso" class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Nome do Compromisso</label>
+        <input type="text" id="nome" class="form-control" />
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Data</label>
+        <input type="date" id="data" class="form-control" />
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Hora</label>
+        <input type="time" id="hora" class="form-control" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Adicionar Compromisso</button>
+      </div>
+    </form>
+
+    <h3 class="mt-5">Meus Compromissos</h3>
+    <table class="table table-striped mt-3">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="listaCompromissos"></tbody>
+    </table>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>Agenda Simples &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

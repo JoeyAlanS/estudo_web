@@ -1,0 +1,12 @@
+.hero {
+    background: url('https://placehold.co/600x400/000000/FFF') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(178, 217, 238);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  
