@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.intro {
+  height: 80vh;
+  background: url('https://placehold.co/1200x600/333/fff?text=Joey+Alan+Portfólio') center/cover no-repeat;
+  position: relative;
+}
+
+.intro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro > div {
+  position: relative;
+  z-index: 2;
+}
+
+.card-hover:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.skill-item {
+  min-width: 150px;
+  text-align: center;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 1rem;
+}
